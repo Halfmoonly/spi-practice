@@ -1,0 +1,2 @@
+#key是接口的全限定名，value是接口的实现类
+org.lyflexi.springspi.MyTestService = org.lyflexi.springspi.impl.FamilyTestService,org.lyflexi.springspi.impl.WorkTestService
