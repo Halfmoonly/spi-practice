@@ -15,10 +15,11 @@
     <name>spi-practice</name>
     <description>spi-practice</description>
     <modules>
-        <module>spi-ServiceProviderInterface</module>
+        <module>spi-jdk-service-provider</module>
         <module>spi-jdbc</module>
         <module>spring-spi</module>
         <module>dubbo-spi</module>
+        <module>spi-classloader-facade</module>
     </modules>
     <properties>
         <java.version>17</java.version>
