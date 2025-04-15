@@ -67,6 +67,7 @@ public class PluginController {
              InputStream resourceAsStream = urlClassLoader.getResourceAsStream("hm.plugin");) {
             String pluginFullClassName = new String(resourceAsStream.readAllBytes());
             Class<?> aClass = urlClassLoader.loadClass(pluginFullClassName);
+            //对加载后的class进行反射实例化
             Constructor<?> constructor = aClass.getConstructor();
             pluginInterface = (PluginInterface) constructor.newInstance();
             return "plugin加载成功：" + aClass.getName();
